@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Replace the xxxx with your own values.
 shopifyKey='xxxx'
 shopifyPassword='xxxx'
 storeName='xxxx'

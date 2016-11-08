@@ -3,6 +3,7 @@
 after=$(TZ='America/Denver' date +%FT%TZ)
 before=$(TZ='America/Denver' date +%FT%TZ)
 
+# Replace the xxxx with your own values.
 shopifyKey='xxxx'
 shopifyPassword='xxxx'
 storeName='xxxx'
