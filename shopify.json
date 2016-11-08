@@ -1,0 +1,2517 @@
+[
+    {
+        "name": "id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "email",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "closed_at",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "number",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "note",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "token",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gateway",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "test",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_price",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "subtotal_price",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_weight",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_tax",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "taxes_included",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "currency",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "financial_status",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "confirmed",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_discounts",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_line_items_price",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "cart_token",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "buyer_accepts_marketing",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "referring_site",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "landing_site",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "cancelled_at",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "cancel_reason",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "total_price_usd",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "checkout_token",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "reference",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "user_id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "location_id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "source_identifier",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "source_url",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "processed_at",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "browser_ip",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "landing_site_ref",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "order_number",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "discount_codes",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "amount",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "type",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "note_attributes",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "payment_gateway_names",
+        "type": "STRING",
+        "mode": "REPEATED"
+    },
+    {
+        "name": "processing_method",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "checkout_id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "source_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "fulfillment_status",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "tax_lines",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "price",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "rate",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "tags",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "contact_email",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "order_status_url",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "line_items",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "variant_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "quantity",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "price",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "grams",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "sku",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "variant_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "vendor",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fulfillment_service",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "product_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "requires_shipping",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "taxable",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "gift_card",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "variant_inventory_management",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "properties",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "value",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "product_exists",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fulfillable_quantity",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "total_discount",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fulfillment_status",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tax_lines",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "price",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "rate",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "shipping_lines",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "price",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "source",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "phone",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "requested_fulfillment_service_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "delivery_category",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "carrier_identifier",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tax_lines",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "price",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "rate",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "billing_address",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "first_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "address1",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "phone",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "city",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "zip",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "province",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "country",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "last_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "address2",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "company",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "longitude",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "latitude",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "country_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "province_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "shipping_address",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "first_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "address1",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "phone",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "city",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "zip",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "province",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "last_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "country",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "address2",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "company",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "longitude",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "latitude",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "country_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "province_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "fulfillments",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "order_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "status",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "created_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "service",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "updated_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tracking_company",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "shipment_status",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tracking_number",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tracking_numbers",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "tracking_number",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "tracking_url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tracking_urls",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "tracking_url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "receipt",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "testcase",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "authorization",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "line_items",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "quantity",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "price",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "grams",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "sku",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "vendor",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillment_service",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "product_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "requires_shipping",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "taxable",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "gift_card",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_inventory_management",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "properties",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "name",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "value",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "product_exists",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillable_quantity",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "total_discount",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillment_status",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "tax_lines",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "title",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "price",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "rate",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "client_details",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "browser_ip",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "accept_language",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "user_agent",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "session_hash",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "browser_width",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "browser_height",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "refunds",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "order_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "created_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "note",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "restock",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "user_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "refund_line_items",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "quantity",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "price",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "grams",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "sku",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_title",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "vendor",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillment_service",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "product_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "requires_shipping",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "taxable",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "gift_card",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "variant_inventory_management",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "properties",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "name",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "value",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "product_exists",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillable_quantity",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "total_discount",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "fulfillment_status",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "tax_lines",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "title",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "price",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "rate",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "line_item_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "subtotal",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "total_tax",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "line_item",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "variant_id",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "title",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "quantity",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "price",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "grams",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "sku",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "variant_title",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "vendor",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "fulfillment_service",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "product_id",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "requires_shipping",
+                                "type": "BOOLEAN",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "taxable",
+                                "type": "BOOLEAN",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "gift_card",
+                                "type": "BOOLEAN",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "name",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "variant_inventory_management",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "properties",
+                                "type": "RECORD",
+                                "mode": "REPEATED",
+                                "fields": [
+                                    {
+                                        "name": "name",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "product_exists",
+                                "type": "BOOLEAN",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "fulfillable_quantity",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "total_discount",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "fulfillment_status",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "tax_lines",
+                                "type": "RECORD",
+                                "mode": "REPEATED",
+                                "fields": [
+                                    {
+                                        "name": "title",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "price",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "rate",
+                                        "type": "FLOAT",
+                                        "mode": "NULLABLE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "transactions",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "order_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "gateway",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "status",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "message",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "created_at",
+                        "type": "TIMESTAMP",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "test",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "authorization",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "currency",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "location_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "user_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "parent_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "device_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "receipt",
+                        "type": "RECORD",
+                        "mode": "NULLABLE",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "object",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "amount",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "balance_transaction",
+                                "type": "RECORD",
+                                "mode": "REPEATED",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "object",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "amount",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "available_on",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "created",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "currency",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "description",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "fee",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "net",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "source",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "sourced_transfers",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "object",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "has_more",
+                                                "type": "BOOLEAN",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "total_count",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "url",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": "RECORD",
+                                                "mode": "REPEATED",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "INTEGER",
+                                                        "mode": "NULLABLE"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "fee_details",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "amount",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "application",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "type",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "status",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "type",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "source",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "type",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "charge",
+                                "type": "RECORD",
+                                "mode": "REPEATED",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "object",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "amount",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "amount_refunded",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "application",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "application_fee",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "authorization_code",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "balance_transaction",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "object",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "amount",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "available_on",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "created",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "fee",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "fee_details",
+                                                "type": "RECORD",
+                                                "mode": "REPEATED",
+                                                "fields": [
+                                                    {
+                                                        "name": "amount",
+                                                        "type": "INTEGER",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "application",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "currency",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "description",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "type",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "net",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "source",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "sourced_transfers",
+                                                "type": "RECORD",
+                                                "mode": "REQUIRED",
+                                                "fields": [
+                                                    {
+                                                        "name": "object",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "has_more",
+                                                        "type": "BOOLEAN",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "total_count",
+                                                        "type": "INTEGER",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "url",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "data",
+                                                        "type": "RECORD",
+                                                        "mode": "REPEATED",
+                                                        "fields": [
+                                                            {
+                                                                "name": "id",
+                                                                "type": "INTEGER",
+                                                                "mode": "NULLABLE"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "status",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "type",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "captured",
+                                        "type": "BOOLEAN",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "created",
+                                        "type": "INTEGER",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "currency",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "customer",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "description",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "destination",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "dispute",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "failure_code",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "invoice",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "livemode",
+                                        "type": "BOOLEAN",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "metadata",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "transaction_fee_total_amount",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "payments_charge_id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "order_id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "payments_transaction_fee_id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "order_transaction_id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "order",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "outcome",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "network_status",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "reason",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "seller_message",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "type",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "paid",
+                                        "type": "BOOLEAN",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "receipt_email",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "receipt_number",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "refunded",
+                                        "type": "BOOLEAN",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "refunds",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "object",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": "RECORD",
+                                                "mode": "REPEATED",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "object",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "amount",
+                                                        "type": "INTEGER",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "balance_transaction",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "charge",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "created",
+                                                        "type": "INTEGER",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "currency",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "metadata",
+                                                        "type": "RECORD",
+                                                        "mode": "REPEATED",
+                                                        "fields": [
+                                                            {
+                                                                "name": "transaction_fee_total_amount",
+                                                                "type": "STRING",
+                                                                "mode": "NULLABLE"
+                                                            },
+                                                            {
+                                                                "name": "payments_refund_id",
+                                                                "type": "STRING",
+                                                                "mode": "NULLABLE"
+                                                            },
+                                                            {
+                                                                "name": "order_transaction_id",
+                                                                "type": "STRING",
+                                                                "mode": "NULLABLE"
+                                                            },
+                                                            {
+                                                                "name": "payments_transaction_fee_id",
+                                                                "type": "STRING",
+                                                                "mode": "NULLABLE"
+                                                            },
+                                                            {
+                                                                "name": "order_id",
+                                                                "type": "STRING",
+                                                                "mode": "NULLABLE"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "reason",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "receipt_number",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "status",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "has_more",
+                                                "type": "BOOLEAN",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "total_count",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "url",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "review",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "shipping",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "source",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "id",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "object",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_city",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_country",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_line1",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_line1_check",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_line2",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_state",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_zip",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "address_zip_check",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "brand",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "country",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "cvc_check",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "dynamic_last4",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "exp_month",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "exp_year",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "fingerprint",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "funding",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "last4",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "tokenization_method",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "customer",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            },
+                                            {
+                                                "name": "metadata",
+                                                "type": "RECORD",
+                                                "mode": "REPEATED",
+                                                "fields": [
+                                                    {
+                                                        "name": "transaction_fee_total_amount",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    },
+                                                    {
+                                                        "name": "payments_refund_id",
+                                                        "type": "STRING",
+                                                        "mode": "NULLABLE"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "emv_auth_data",
+                                                "type": "STRING",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "source_transfer",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "statement_descriptor",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "status",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "failure_message",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "fraud_details",
+                                        "type": "RECORD",
+                                        "mode": "REPEATED",
+                                        "fields": [
+                                            {
+                                                "name": "id",
+                                                "type": "INTEGER",
+                                                "mode": "NULLABLE"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "created",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "currency",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "metadata",
+                                "type": "RECORD",
+                                "mode": "REPEATED",
+                                "fields": [
+                                    {
+                                        "name": "transaction_fee_total_amount",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "payments_refund_id",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "payments_transaction_fee_id",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    },
+                                    {
+                                        "name": "order_transaction_id",
+                                        "type": "STRING",
+                                        "mode": "NULLABLE"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "reason",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "receipt_number",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "status",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "error_code",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "source_name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "created",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "metadata",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "transaction_fee_total_amount",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "payments_refund_id",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "reason",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "receipt_number",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "order_adjustments",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "order_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "refund_id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "tax_amount",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "reason",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "payment_details",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "credit_card_bin",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "avs_result_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "cvv_result_code",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "credit_card_number",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "credit_card_company",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "customer",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "email",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "accepts_marketing",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "created_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "updated_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "first_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "last_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "orders_count",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "state",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "total_spent",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "last_order_id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "note",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "verified_email",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "multipass_identifier",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tax_exempt",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tags",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "last_order_name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "default_address",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "first_name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "last_name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "company",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "address1",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "address2",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "city",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "province",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "zip",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "phone",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "province_code",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "country_code",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "country_name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "default",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    }
+]
