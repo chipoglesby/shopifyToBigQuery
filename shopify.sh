@@ -1,7 +1,7 @@
 #!/bin/bash
 
-after=$(TZ='America/Denver' date +%FT%TZ)
-before=$(TZ='America/Denver' date +%FT%TZ -d "2 min ago")
+after=$(date +%FT%TZ)
+before=$(date +%FT%TZ -d "2 min ago")
 
 # Replace the xxxx with your own values.
 shopifyKey='xxxx'
