@@ -11,9 +11,13 @@ You can run the script via crontab on a linux machine using a command like this:
 
 `*/2 * * * * bash -c "shopify.sh"`
 
-The [`shopify.sh`](shopify.sh) when ran every minute will download information
-if there is any. If the size of the `.json` file is greater than zero, it
-uploads your file to Google Cloud Storage and then loads it into BigQuery.
+The cronjob should be ran in two minute increments. For an explination, [see
+this pull request](https://github.com/chipoglesby/shopifyToBigQuery/pull/1).
+T
+he [`shopify.sh`](shopify.sh) when ran every two minutes will download
+information if there is any. If the size of the `.json` file is greater than
+zero, it uploads your file to Google Cloud Storage and then loads it into
+BigQuery.
 
 Both scripts also depend on
 [`jq` and can be found here.](https://stedolan.github.io/jq/)
