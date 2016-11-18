@@ -9,7 +9,7 @@ Google BigQuery for analysis and Cloud Storage for long-term storage.
 
 You can run the script via crontab on a linux machine using a command like this:
 
-`* * * * * bash -c "shopify.sh"`
+`*/2 * * * * bash -c "shopify.sh"`
 
 The [`shopify.sh`](shopify.sh) when ran every minute will download information
 if there is any. If the size of the `.json` file is greater than zero, it
