@@ -12,7 +12,7 @@ full=$(curl "https://$shopifyKey:$shopifyPassword@$storeName.myshopify.com/admin
 
 limit=250
 
-count=$((full / limit))
+count=$((full / limit+1))
 
 for page in $(seq 1 "$count");
   do
