@@ -996,6 +996,11 @@
                 "mode": "NULLABLE"
             },
             {
+                "name": "processed_at",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE"
+            },
+            {
                 "name": "refund_line_items",
                 "type": "RECORD",
                 "mode": "REPEATED",
