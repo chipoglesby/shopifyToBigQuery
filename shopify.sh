@@ -17,7 +17,7 @@ curl "https://$shopifyKey:$shopifyPassword@$storeName.myshopify.com/admin/orders
 # If the file size is greater than zero, then process the orders
 if [ -s "$after.json" ]; then
   gsutil -mq cp -r "$after.json" "$cloudStorageBucket/"
-  bq load --source_format=NEWLINE_DELIMITED_JSON $dataset.$table "$after.json" shopify.json
+  bq load --source_format=NEWLINE_DELIMITED_JSON --autodetect $dataset.$table "$after.json"
  else
   echo "No information to upload"
  fi

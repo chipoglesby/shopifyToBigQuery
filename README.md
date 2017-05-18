@@ -21,5 +21,4 @@ BigQuery.
 Both scripts also depend on
 [`jq` and can be found here.](https://stedolan.github.io/jq/)
 
-The Shopify API schema contains 483 different key:value pairs or arrays that are
-nested and repeated. Fortunately, I've done the hard work for you.
+This script now uses BigQuery's `--autodetect` feature to figure out the schema for you!
