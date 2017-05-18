@@ -21,7 +21,7 @@ done
 
 if [ -s "fullBackup.json" ]; then
   gsutil -mq cp -r "fullBackup.json" "gs://$cloudStorageBucket/"
-  bq load --source_format=NEWLINE_DELIMITED_JSON --autodetect --replace $dataset.$table "fullBackup.json" shopify.json
+  bq load --source_format=NEWLINE_DELIMITED_JSON --autodetect --replace $dataset.$table "fullBackup.json"
  else
   echo "No information to upload"
  fi
